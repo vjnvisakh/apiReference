@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Time table API Reference</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./app.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <style>
+        
+        body
+        {
+            padding:3%;
+        }
+
+        .card
+        {
+            margin-top:1%;
+        }
+    
+    </style>
+
+</head>
+<body>
+    
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Add New API</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+    
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <input type="text" class="form-control" placeholder="Title of the API" id="title"><br />
+                    <input type="text" class="form-control" placeholder="Description" id="description"><br />
+                    <input type="text" class="form-control" placeholder="URL to Hit" id="endPoint"><br />
+                    <input type="text" class="form-control" placeholder="Params to be passed" id="params"><br />
+                    <input type="text" class="form-control" placeholder="Response on succes" id="onSuccess"><br />
+                    <input type="text" class="form-control" placeholder="Response on failure" id="onFailure">
+                </div>
+    
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="addApi()">Add API</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <h1><b>API Reference</b></h1>
+    <p><b>Module:</b> Time-Tables <br /><b>Version:</b> 1.1</p>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Add API
+    </button>
+
+    <div id="accordion">        
+        
+    </div>
+
+</body>
+</html>
+
+
