@@ -1,5 +1,5 @@
-# apiReference
-A small firebase-cloudstore application.
+# Setting up Firebase
+A small application of connecting firebase-cloudstore and hosting it using CLI.
 
 Firebase. Yes, I had heard about it a lot. Firebase actually has a lot of cool things inside it from ML to Analytics and storage and what not. There are a lot of nice services. Although I don't know how much they are charging at this moment. This was my first date with it.
 
